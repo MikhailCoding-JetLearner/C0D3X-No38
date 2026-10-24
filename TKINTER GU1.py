@@ -1,0 +1,10 @@
+from tkinter import *
+screen = Tk()
+screen.geometry('1000x500')
+button = Button(screen, text='\nI AM BUTTON\n\nDESTROYER OF SCREEN\n', command=screen.destroy)
+button.pack(side='top')
+lable = Label(screen, text='\n\nDONT CLICK BUTTON\n\n')
+lable.pack(side='bottom')
+entry = Entry(screen)
+entry.pack(side='left')
+screen.mainloop()
